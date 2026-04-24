@@ -21,30 +21,30 @@ export default function Home() {
                 <img src="/api/placeholder/40/40" alt="En - neko" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h2 className="font-bold text-gray-800">En - neko <span className="text-xs font-normal text-teal-600 bg-teal-50 px-2 py-1 rounded-full ml-1">(开发中)</span></h2>
+                <h2 className="font-bold text-gray-800">En - neko <span className="text-xs font-normal text-teal-600 bg-teal-50 px-2 py-1 rounded-full ml-1">(Developing)</span></h2>
               </div>
             </div>
             
             <p className="text-xs font-semibold text-gray-400 mb-4 tracking-wider">GENERAL</p>
             <nav className="space-y-3">
-              <NavItem icon={<BookOpen size={18} />} label="近期文章" active />
-              <NavItem icon={<Grid size={18} />} label="我的项目" />
-              <NavItem icon={<Info size={18} />} label="关于网站" />
-              <NavItem icon={<Share2 size={18} />} label="推荐分享" />
-              <NavItem icon={<Award size={18} />} label="优秀博客" />
+              <NavItem icon={<BookOpen size={18} />} label="Recent Articles" active />
+              <NavItem icon={<Grid size={18} />} label="My Projects" />
+              <NavItem icon={<Info size={18} />} label="About the Site" />
+              <NavItem icon={<Share2 size={18} />} label="Recommendations" />
+              <NavItem icon={<Award size={18} />} label="Excellent Blogs" />
             </nav>
           </div>
 
           {/* Latest Article */}
           <div className="bg-white/60 backdrop-blur-xl border border-white/80 rounded-[2rem] p-6 shadow-sm">
-            <p className="text-xs text-gray-400 mb-3">最新文章</p>
+            <p className="text-xs text-gray-400 mb-3">Latest Article</p>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 bg-gray-200 rounded-lg overflow-hidden shrink-0">
                 <img src="/api/placeholder/32/32" alt="Avatar" />
               </div>
               <div>
-                <h3 className="text-sm font-bold text-gray-800">公告</h3>
-                <p className="text-xs text-gray-500 mt-1 line-clamp-2">请用户正在搭建中 2026/3/4</p>
+                <h3 className="text-sm font-bold text-gray-800">Bulletin Board</h3>
+                <p className="text-xs text-gray-500 mt-1 line-clamp-2">Development in progress</p>
               </div>
             </div>
           </div>
@@ -79,8 +79,8 @@ export default function Home() {
               CMU 15-445
             </div>
             <div>
-              <p className="text-xs text-gray-400 mb-1">随机推荐</p>
-              <h3 className="text-sm font-bold text-gray-800">CMU 15-445 & 大数据</h3>
+              <p className="text-xs text-gray-400 mb-1">Random Recommendation</p>
+              <h3 className="text-sm font-bold text-gray-800">CMU 15-445</h3>
               <p className="text-xs text-gray-500 mt-1">Views: 18,367 Marks: 320</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
                 {/* Empty spacer to match alignment if needed, or adjust grid */}
             </div>
             <button className="bg-teal-400 hover:bg-teal-500 text-white rounded-full px-5 py-2 flex items-center gap-2 text-sm font-medium transition shadow-md">
-              <Edit3 size={16} /> 写文章
+              <Edit3 size={16} /> Write Article
             </button>
             <div className="bg-gray-100/80 backdrop-blur-xl border border-white rounded-[1.5rem] px-6 py-4 shadow-inner flex items-center justify-center">
               <span className="text-3xl font-mono text-gray-600 tracking-wider">14:39</span>
@@ -103,9 +103,9 @@ export default function Home() {
 
           {/* Calendar Widget */}
           <div className="bg-white/60 backdrop-blur-xl border border-white/80 rounded-[2rem] p-6 shadow-sm">
-            <p className="text-xs font-semibold text-gray-400 mb-4">2026/3/7 周六</p>
+            <p className="text-xs font-semibold text-gray-400 mb-4">2026/3/7 Saturday</p>
             <div className="grid grid-cols-7 gap-y-3 text-center text-xs">
-              <div className="text-gray-400">一</div><div className="text-gray-400">二</div><div className="text-gray-400">三</div><div className="text-gray-400">四</div><div className="text-gray-400">五</div><div className="text-gray-400">六</div><div className="text-gray-400">日</div>
+              <div className="text-gray-400">Mon</div><div className="text-gray-400">Tue</div><div className="text-gray-400">Wed</div><div className="text-gray-400">Thu</div><div className="text-gray-400">Fri</div><div className="text-gray-400">Sat</div><div className="text-gray-400">Sun</div>
               {/* Dummy Dates for visual alignment */}
               <div className="text-gray-300">23</div><div className="text-gray-300">24</div><div className="text-gray-300">25</div><div className="text-gray-300">26</div><div className="text-gray-300">27</div><div className="text-gray-300">28</div><div className="text-gray-300">1</div>
               <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
