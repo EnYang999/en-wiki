@@ -18,10 +18,10 @@ export default function Home() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-gray-200 rounded-full overflow-hidden">
                 {/* Replace with your actual avatar */}
-                <img src="/api/placeholder/40/40" alt="Ivy Neko" className="w-full h-full object-cover" />
+                <img src="/api/placeholder/40/40" alt="En - neko" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h2 className="font-bold text-gray-800">Ivy - neko <span className="text-xs font-normal text-teal-600 bg-teal-50 px-2 py-1 rounded-full ml-1">(开发中)</span></h2>
+                <h2 className="font-bold text-gray-800">En - neko <span className="text-xs font-normal text-teal-600 bg-teal-50 px-2 py-1 rounded-full ml-1">(开发中)</span></h2>
               </div>
             </div>
             
@@ -64,7 +64,7 @@ export default function Home() {
               🐱
             </div>
             <h1 className="text-2xl font-bold text-gray-800 mb-1">Good Afternoon</h1>
-            <p className="text-lg text-teal-600 font-medium mb-6">I'm Ivy , Nice to meet you!</p>
+            <p className="text-lg text-teal-600 font-medium mb-6">I'm En, Welcome to My Blog!</p>
             
             <div className="flex gap-3">
               {/* <SocialButton icon={<Github size={16} />} label="Github" dark /> */}
