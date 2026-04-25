@@ -105,28 +105,13 @@ export default function Home() {
           </div>
 
           {/* Calendar Widget */}
-          <div className="bg-white/60 backdrop-blur-xl border border-white/80 rounded-[2rem] p-6 shadow-sm">
-            <p className="text-xs font-semibold text-gray-400 mb-4">2026/3/7 Saturday</p>
-            <div className="grid grid-cols-7 gap-y-3 text-center text-xs">
-              <div className="text-gray-400">Mon</div><div className="text-gray-400">Tue</div><div className="text-gray-400">Wed</div><div className="text-gray-400">Thu</div><div className="text-gray-400">Fri</div><div className="text-gray-400">Sat</div><div className="text-gray-400">Sun</div>
-              {/* Dummy Dates for visual alignment */}
-              <div className="text-gray-300">23</div><div className="text-gray-300">24</div><div className="text-gray-300">25</div><div className="text-gray-300">26</div><div className="text-gray-300">27</div><div className="text-gray-300">28</div><div className="text-gray-300">1</div>
-              <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
-              <div className="bg-teal-400 text-white rounded-full w-6 h-6 flex items-center justify-center mx-auto">7</div>
-              <div>8</div>
-              <div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
-              <div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div>
-            </div>
-          </div>
-
+          <CalendarWidget />
           {/* Music Player */}
 
           <MusicPlayer />
-          // Inside your main page grid...
+
           <div className="md:col-span-4 flex flex-col gap-6">
             {/* Other elements */}
-
-            <CalendarWidget />
             <DailyWidget />
 
           </div>
