@@ -5,6 +5,13 @@
   --foreground: #171717;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -43,4 +50,28 @@ body {
 
 .spin-slow {
   animation: spin-slow 6s linear infinite;
+}
+
+.viewport-fit {
+  --frame-pad: clamp(14px, 2.1vmin, 24px);
+  width: 100%;
+  height: 100%;
+  padding: var(--frame-pad);
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+
+.viewport-fit__canvas {
+  --design-width: 1080;
+  --design-height: 730;
+  --compact-scale: 0.94;
+  --fit-scale-w: calc((100dvw - (var(--frame-pad) * 2)) / var(--design-width));
+  --fit-scale-h: calc((100dvh - (var(--frame-pad) * 2)) / var(--design-height));
+  --fit-scale: min(1, var(--fit-scale-w), var(--fit-scale-h));
+  --final-scale: calc(var(--fit-scale) * var(--compact-scale));
+  width: calc(var(--design-width) * 1px);
+  height: calc(var(--design-height) * 1px);
+  transform: scale(var(--final-scale));
+  transform-origin: center;
 }
