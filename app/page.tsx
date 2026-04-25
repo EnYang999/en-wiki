@@ -3,9 +3,9 @@ import {
   BookOpen, Grid, Info, Share2, Award,
   Mail, Play, Heart, Clock, Calendar as CalIcon, Edit3
 } from 'lucide-react';
-import MusicPlayer from '../components/MusicPlayer';
-import DailyWidget from '../components/DailyWidget';
-import CalendarWidget from '../components/CalendarWidget';
+import MusicPlayer from '../frontend/components/MusicPlayer';
+import DailyWidget from '../frontend/components/DailyWidget';
+import CalendarWidget from '../frontend/components/CalendarWidget';
 
 export default function Home() {
   return (
@@ -120,24 +120,15 @@ export default function Home() {
           </div>
 
           {/* Music Player */}
-          <div className="bg-white/60 backdrop-blur-xl border border-white/80 rounded-[2rem] p-4 shadow-sm flex items-center justify-between mt-auto gap-4">
-            <div className="flex gap-2 items-center flex-1">
-              <div className="bg-teal-100 p-2 rounded-full text-teal-500">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path></svg>
-              </div>
-              <span className="text-sm font-medium text-gray-700 truncate">Close To You</span>
-            </div>
-            <button className="w-8 h-8 bg-teal-400 text-white rounded-full flex items-center justify-center shadow-md hover:bg-teal-500 transition">
-              <Play size={14} className="ml-1" />
-            </button>
-          </div>
+
+          <MusicPlayer />
           // Inside your main page grid...
           <div className="md:col-span-4 flex flex-col gap-6">
             {/* Other elements */}
 
             <CalendarWidget />
             <DailyWidget />
-            <MusicPlayer />
+
           </div>
           <div className="flex items-center gap-2 px-2 text-pink-400 text-sm font-medium">
             <Heart size={16} fill="currentColor" /> 11424
